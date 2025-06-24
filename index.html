@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="container">
+        <h1 class="dream-title">Text in a Dreamstate</h1>
+        <p class="dream-subtitle">Because even words deserve to dance!</p>
+
+        <div class="aura-grid">
+            <div class="glow-card" onclick="scrambleText('matrix')">
+                <h3 class="glow-title">Starlight Flow</h3>
+                <div class="spell-text matrix-scramble" id="matrix-text">LUMINOUS SPELLS</div>
+            </div>
+            <div class="glow-card" onclick="scrambleText('cyber')">
+                <h3 class="glow-title">Cloud Drift</h3>
+                <div class="spell-text cyber-scramble" id="cyber-text">PASTEL HORIZON</div>
+            </div>
+            <div class="glow-card" onclick="scrambleText('neon')">
+                <h3 class="glow-title">Aurora Fade</h3>
+                <div class="spell-text neon-scramble" id="neon-text">DREAM GLOW</div>
+            </div>
+            <div class="glow-card" onclick="scrambleText('glitch')">
+                <h3 class="glow-title">Moon Glitch</h3>
+                <div class="spell-text glitch-scramble" id="glitch-text" data-text="SOFT ERROR"></div>
+            </div>
+            <div class="glow-card" onclick="scrambleText('terminal')">
+                <h3 class="glow-title">Whisper Code</h3>
+                <div class="spell-text terminal-scramble" id="terminal-text">FAIRY.RUN</div>
+            </div>
+            <div class="glow-card" onclick="scrambleText('holographic')">
+                <h3 class="glow-title">Prism Pulse</h3>
+                <div class="spell-text holographic-scramble" id="holographic-text">MAGICFIELD</div>
+            </div>
+        </div>
+
+        <div class="dream-controls">
+            <button class="dream-btn" onclick="scrambleAll()">Scramble All</button>
+            <button class="dream-btn" onclick="setSpeed('fast')">Fast Mode</button>
+            <button class="dream-btn" onclick="setSpeed('slow')">Slow Mode</button>
+            <button class="dream-btn" onclick="setSpeed('normal')">Normal Speed</button>
+            <button class="dream-btn" onclick="randomizeTexts()">Random Texts</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
