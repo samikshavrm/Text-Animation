@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Nunito&family=Pacifico&family=Quicksand&family=Sacramento&display=swap');
 
-* {
+*{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-body {
+body{
     background: #fff7f0;
     min-height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-.bg-animation {
+.bg-animation{
     position: fixed;
     top: 0%;
     left: 0%;
