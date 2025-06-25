@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Nunito&family=Pacifico&family=Quicksand&family=Sacramento&display=swap');
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #fff7f0;
     min-height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
@@ -14,14 +14,14 @@ body{
     position: relative;
 }
 
-.bg-animation{
+.bg-animation {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: 
+    background:
         radial-gradient(circle at 15% 25%, rgba(253, 120, 219, 0.5) 0%, transparent 85%),
         radial-gradient(circle at 85% 20%, rgba(98, 188, 229, 0.5) 0%, transparent 85%),
         radial-gradient(circle at 25% 80%, rgba(97, 232, 140, 0.45) 0%, transparent 85%),
@@ -105,8 +105,8 @@ body{
     transform: translateY(-8px);
     border-color: rgba(59, 130, 246, 0.3);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3),
-                0 10px 10px -5px rgba(0, 0, 0, 0.1),
-                0 0 0 1px rgba(59, 130, 246, 0.1);
+        0 10px 10px -5px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(59, 130, 246, 0.1);
 }
 
 .glow-card:hover::before {
@@ -189,19 +189,53 @@ body{
 }
 
 @keyframes glitch-1 {
-    0%, 90%, 100% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
 }
 
 @keyframes glitch-2 {
-    0%, 90%, 100% { transform: translate(0); }
-    20% { transform: translate(2px, -2px); }
-    40% { transform: translate(-2px, 2px); }
-    60% { transform: translate(-2px, -2px); }
-    80% { transform: translate(2px, 2px); }
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    40% {
+        transform: translate(-2px, 2px);
+    }
+
+    60% {
+        transform: translate(-2px, -2px);
+    }
+
+    80% {
+        transform: translate(2px, 2px);
+    }
 }
 
 .terminal-scramble {
@@ -228,8 +262,16 @@ body{
 }
 
 @keyframes terminal-cursor {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .holographic-scramble {
@@ -244,36 +286,83 @@ body{
 }
 
 @keyframes holographic-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 @keyframes breathe {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 @keyframes floatText {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes neonFlicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
 }
 
 @keyframes glitchJitter {
-    0%, 100% { transform: translate(0, 0); }
-    25% { transform: translate(1px, -1px); }
-    50% { transform: translate(-1px, 1px); }
-    75% { transform: translate(1px, 1px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(1px, -1px);
+    }
+
+    50% {
+        transform: translate(-1px, 1px);
+    }
+
+    75% {
+        transform: translate(1px, 1px);
+    }
 }
 
 @keyframes typeIn {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .dream-controls {
@@ -332,8 +421,16 @@ body{
 }
 
 @keyframes typing-cursor {
-    0%, 50% { border-color: transparent; }
-    51%, 100% { border-color: currentColor; }
+
+    0%,
+    50% {
+        border-color: transparent;
+    }
+
+    51%,
+    100% {
+        border-color: currentColor;
+    }
 }
 
 @media (max-width: 768px) {
